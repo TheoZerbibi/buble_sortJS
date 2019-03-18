@@ -3,6 +3,8 @@ const tab = readline.question("Entrer des nombres : ");
 main(tab);
 
 function buble_sort(tab) {
+	console.log(`\nTab Start :`);
+	console.log(tab);
 	let i = 0;
 	let leng = tab.length;
 	let temp;
@@ -13,7 +15,7 @@ function buble_sort(tab) {
 				temp = tab[i];
 				tab[i] = tab[y];
 				tab[y] = temp;
-				console.log(tab);
+				// console.log(tab);
 				y++;
 			}
 			i++;
@@ -21,7 +23,8 @@ function buble_sort(tab) {
 		leng--;
 		i = 0;
 	}
-
+	console.log(`\nTab End :`);
+	console.log(tab);
 }
 
 function array(tab) {
@@ -43,7 +46,6 @@ function array(tab) {
 
 function check(tab) {
 	let i = 0;
-	console.log(tab);
 	while(i < tab.length) {
 		if (isNaN(tab[i]) == true) {
 			console.log('Nombres invalide !');
