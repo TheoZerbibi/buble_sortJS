@@ -1,10 +1,12 @@
 const readline = require('readline-sync');
 const tab = readline.question("Entrer des nombres : ");
+
 main(tab);
 
 function buble_sort(tab) {
 	console.log(`\nTab Start :`);
 	console.log(tab);
+	console.log('\n Algo :');
 	let i = 0;
 	let leng = tab.length;
 	let temp;
@@ -15,7 +17,7 @@ function buble_sort(tab) {
 				temp = tab[i];
 				tab[i] = tab[y];
 				tab[y] = temp;
-				// console.log(tab);
+				console.log(tab);
 				y++;
 			}
 			i++;
